@@ -11,12 +11,16 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection and models
-mongoose.connect('mongodb+srv://ashpatni:5eoZl3tEIhZSbB1F@cluster0.nx21r.mongodb.net/mydatabase?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log("DB connected successfully"))
-.catch((err) => console.log("DB connection error:", err));
+mongoose
+  .connect(
+    "mongodb+srv://surajjkumar9608:GJ2O0b9ehaGNwJi9@cluster0.pwebu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => console.log("DB connected successfully"))
+  .catch((err) => console.log("DB connection error:", err));
 
 const emailLogSchema = new mongoose.Schema({
   email: String,
@@ -28,10 +32,10 @@ const EmailLog = mongoose.model('EmailLog', emailLogSchema);
 
 // Email transporter configuration
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
-    user: 'patniaishwarya96@gmail.com',
-    pass: 'gcvc syov wida xqxb',
+    user: "surajjkumar9608@gmail.com",
+    pass: "blqo olzo iyni vwao",
   },
 });
 
