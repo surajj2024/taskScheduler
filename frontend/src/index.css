@@ -2,34 +2,28 @@
 
 /* Apply basic styles to the app container */
 .App {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.App:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the header */
 .App h1 {
-  font-size: 26px;
-  margin-bottom: 25px;
-  color: #222;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
   text-align: center;
-  letter-spacing: 1px;
 }
 
 /* Style for the form elements */
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 /* Style for form labels */
@@ -37,17 +31,15 @@ label {
   font-size: 16px;
   font-weight: bold;
   color: #555;
-  text-transform: uppercase;
 }
 
 /* Style for form inputs */
 input[type="text"],
 input[type="email"] {
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  transition: border-color 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* Style for form inputs on focus */
@@ -55,38 +47,31 @@ input[type="text"]:focus,
 input[type="email"]:focus {
   border-color: #007BFF;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
 /* Style for the submit button */
 button {
-  padding: 12px 18px;
-  font-size: 18px;
+  padding: 10px 15px;
+  font-size: 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #007BFF;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.3s ease;
 }
 
+/* Style for button on hover */
 button:hover {
   background-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-button:active {
-  background-color: #004080;
-  transform: translateY(1px);
 }
 
 /* Style for alerts and error messages */
 .alert {
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-top: 15px;
-  opacity: 0.9;
 }
 
 .alert-success {
@@ -98,28 +83,6 @@ button:active {
   background-color: #f8d7da;
   color: #721c24;
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .App {
-    padding: 15px;
-  }
-
-  form {
-    gap: 15px;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    padding: 10px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 10px 15px;
-  }
-}
-
 /* TaskList.css */
 
 /* Container for the task list */
@@ -127,22 +90,16 @@ button:active {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.task-list:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .task-list h2 {
-  font-size: 26px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
   color: #333;
-  letter-spacing: 1px;
 }
 
 /* Table styling */
@@ -150,12 +107,11 @@ button:active {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  overflow-x: auto;
 }
 
 .task-list th,
 .task-list td {
-  padding: 15px;
+  padding: 12px;
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -163,7 +119,6 @@ button:active {
 .task-list th {
   background-color: #f4f4f4;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .task-list tr:nth-child(even) {
@@ -172,21 +127,4 @@ button:active {
 
 .task-list tr:hover {
   background-color: #e2e2e2;
-  transition: background-color 0.3s ease;
-}
-
-/* Responsive styles for the task list */
-@media (max-width: 768px) {
-  .task-list {
-    padding: 15px;
-  }
-
-  .task-list th,
-  .task-list td {
-    padding: 10px;
-  }
-
-  .task-list h2 {
-    font-size: 22px;
-  }
 }
