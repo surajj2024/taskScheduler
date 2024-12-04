@@ -10,7 +10,7 @@ This project is a *Task Scheduler* that allows users to create scheduled tasks v
 ## Live Hosted Version
 The project is live and can be accessed for backend [here](https://taskscheduler-5ij8.onrender.com).
 
-The project is live and can be accessed for frontend [here](https://task-scheduler-azure.vercel.app/).
+The project is live and can be accessed for frontend [here](https://task-scheduler-azure.vercel.app/)..
 
 ## API Documentation
 - POST /api/tasks: Add a new task (schedule an email).

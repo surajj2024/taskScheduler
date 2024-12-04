@@ -39,7 +39,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// POST route to add a new task
+// POST route to add a new task added
 app.post('/api/tasks', (req, res) => {
   const { task, email, schedule } = req.body;
 
